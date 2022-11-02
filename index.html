@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="small-container">
+      <div class="small-cont">
         <h1>Luxembourg</h1>
         <h2>Last updated: Friday 18:00</h2>
 
@@ -32,7 +32,13 @@
               <li>Cloudy</li>
             </ul>
           </div>
-          <div class="col-4">10 °C|°F</div>
+          <div class="col-4 degree">
+            10<span class="celsiusfahrenheit">
+              <a href="#" id="celsius">°C</a>
+              |
+              <a href="#" id="fahrenheit">°F</a></span
+            >
+          </div>
           <div class="col-4">
             <ul>
               <li>Humidity: 68%</li>
@@ -40,15 +46,14 @@
             </ul>
           </div>
         </div>
-
-        <small>
-          <a
-            href="https://github.com/EndijaM/Vanilla-weather-app "
-            target="_blank"
-            >Open-source code</a
-          >, by Endija Mathur
-        </small>
       </div>
+      <footer>
+        <a
+          href="https://github.com/EndijaM/Vanilla-weather-app "
+          target="_blank"
+          >Open-source code</a
+        >, by Endija Mathur
+      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>

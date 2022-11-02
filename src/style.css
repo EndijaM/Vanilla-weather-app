@@ -1,0 +1,55 @@
+body {
+  background: #e8eaf0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: #4d606d;
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 28px;
+}
+h2 {
+  color: #4d606d;
+  display: block;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 18px;
+  margin-bottom: 40px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  font-size: 14px;
+  color: #4d606d;
+  line-height: 20px;
+}
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #4d606d;
+}
+
+.small-cont {
+  max-width: 600px;
+  margin: 30px auto;
+  margin-bottom: 1px;
+  padding: 30px;
+  border: 2px solid #d2d4d9;
+  border-radius: 10px;
+  background-color: white;
+}
+.celsiusfahrenheit {
+  font-size: 14px;
+  position: relative;
+  top: -32px;
+}
+.degree {
+  color: #4d606d;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 100px;
+}
