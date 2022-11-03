@@ -35,6 +35,9 @@ footer {
   font-size: 14px;
   color: #4d606d;
 }
+a:link {
+  text-decoration: none;
+}
 
 .small-cont {
   max-width: 600px;
@@ -69,4 +72,8 @@ footer {
 .btn-primary {
   background-color: #40bac2;
   border: 2px solid #40bac2;
+}
+.weather-temperature .active {
+  color: #4d606d;
+  cursor: default;
 }
