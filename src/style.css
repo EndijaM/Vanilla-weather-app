@@ -66,3 +66,7 @@ footer {
   text-align: center;
   margin-left: -40px;
 }
+.btn-primary {
+  background-color: #40bac2;
+  border: 2px solid #40bac2;
+}
