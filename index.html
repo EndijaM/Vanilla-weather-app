@@ -12,12 +12,13 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="small-cont">
-        <h1>Luxembourg</h1>
+        <h1 id="city"></h1>
         <h2>Last updated: Friday 18:00</h2>
 
         <div class="row">
@@ -29,20 +30,21 @@
                   alt="Cloudy"
                 />
               </li>
-              <li>Cloudy</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="col-4 degree">
-            10<span class="celsiusfahrenheit">
+            <span id="temperature">10</span
+            ><span class="celsiusfahrenheit">
               <a href="#" id="celsius">°C</a>
               |
               <a href="#" id="fahrenheit">°F</a></span
             >
           </div>
           <div class="col-4">
-            <ul>
-              <li>Humidity: 68%</li>
-              <li>Wind: 10km/h</li>
+            <ul class="weather-details">
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/h</li>
             </ul>
           </div>
         </div>
