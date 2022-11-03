@@ -26,6 +26,8 @@ li {
   font-size: 14px;
   color: #4d606d;
   line-height: 20px;
+}
+li::first-letter {
   text-transform: capitalize;
 }
 footer {
