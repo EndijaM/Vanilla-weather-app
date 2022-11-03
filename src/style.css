@@ -60,3 +60,9 @@ footer {
   position: relative;
   top: 24px;
 }
+.imgdescription {
+  position: relative;
+  top: -30px;
+  text-align: center;
+  margin-left: -40px;
+}
