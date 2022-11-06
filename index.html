@@ -13,6 +13,10 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/697d9df87f.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -20,7 +24,7 @@
       <div class="small-cont">
         <form id="search-form" class="mb-3">
           <div class="row">
-            <div class="col-6">
+            <div class="col-7">
               <input
                 type="search"
                 placeholder="Search city"
@@ -37,13 +41,10 @@
                 class="btn btn-primary w-100"
               />
             </div>
-            <div class="col-3">
-              <input
-                id="buttonCurrent"
-                type="submit"
-                value="Current"
-                class="btn btn-primary w-100"
-              />
+            <div class="col-2">
+              <button id="buttonCurrent" class="btn btn-primary w-100">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </button>
             </div>
           </div>
         </form>
