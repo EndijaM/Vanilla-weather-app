@@ -77,3 +77,25 @@ a:link {
   color: #4d606d;
   cursor: default;
 }
+
+.weather-forecast {
+  margin-top: 23px;
+  text-align: center;
+  color: #4d606d;
+}
+
+.weather-forecast-day {
+  padding: 15px;
+  line-height: 2;
+}
+.weather-forecast-day:hover {
+  background-color: rgba(64, 186, 194, 0.3);
+  transition: 2ms;
+  border-radius: 10px;
+}
+
+.weather-forecast-date,
+.weather-forecast-temperature-min {
+  font-size: 16px;
+  opacity: 0.7;
+}
