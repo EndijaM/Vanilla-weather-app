@@ -112,6 +112,20 @@ function handleSumbit(event) {
   search(cityInputElement.value);
 }
 
+function searchCurrentPosition(position) {
+  let apiKey = "03681td6f2obc7b09ad4ba80345b8b9f";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lat=${position.coords.latitude}&lon=${position.coords.longitude}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function allowCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchCurrentPosition);
+}
+
+let currentButton = document.querySelector("#buttonCurrent");
+currentButton.addEventListener("click", allowCurrentLocation);
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSumbit);
 
