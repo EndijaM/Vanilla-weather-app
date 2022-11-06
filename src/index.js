@@ -21,6 +21,33 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2 weather-forecast-day">
+              <div class="weather-forecast-date">${day}</div>
+
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
+                alt=""
+                width="44"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max">10°</span>
+                <span class="weather-forecast-temperature-min">6°</span>
+              </div>
+            </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -89,3 +116,4 @@ let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", displayCelsiusTemp);
 
 search("Luxembourg");
+displayForecast();
